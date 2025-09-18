@@ -1,0 +1,50 @@
+.rounded-box {
+      	border: 1px solid #ccc;
+      	border-radius: 15px;
+      	padding: 1.5rem;
+      	height: 100%;
+}
+	
+.rounded-box-bis {
+      	border: 1px solid #ccc;
+      	border-radius: 15px;
+      	padding: 1.5rem;
+      	height: 100%;  
+	background-color: #e0e0e0;
+}
+	
+.rounded-img {
+	border-radius: 15px;
+}
+	
+.navbar-toggler .material-symbols-outlined {
+	font-size: 28px;
+}
+	
+main.container {
+	max-width: 100%;
+      	padding-left: 0;
+      	padding-right: 0;
+}
+	
+section.bg-custom {
+      	background-color: #59200a;	
+}
+	
+.white-heading {
+	color: white;
+}
+	
+section.container {
+	display: flex;
+	justify-content: center;
+      	max-width: 100%;
+      	padding-left: 5;
+      	padding-right: 5;
+}
+	
+section.container-bis {
+      	max-width: 75%;
+      	padding-left: 5;
+      	padding-right: 5;
+}

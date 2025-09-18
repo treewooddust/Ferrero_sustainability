@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<title data-i18n="title">Risultati - Ferrero</title>
+
+	<!-- Material design simboli + Roboto -->
+	<!-- 
+		Questi sono i fonts e i simboli se si prendono online, se voglio girare il sito offline allora commento qua e decommento i font locali sotto.
+		Quel fonts.css è un css in locale che richiama i file dei fonts di Roboto Flex e delle icone di material 3 expressive che sono sempre in una 
+		cartella in locale e che ho scaricato da google fonts 
+	-->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet">	
+	
+	<!-- Font locali -->
+	<!-- 
+	<link href="css/fonts.css" rel="stylesheet">
+	-->
+	
+	
+	
+	
+	
+
+	<!-- Bootstrap 5 CSS -->
+	<!-- 
+		Come per i fonts questo è il link a bootstrap se si è online, se si vuole far girare il sito offline si commenta qui e si decommenta sotto dove
+		c'è il link ai css di bootstrap scaricati e messi in una cartella in locale
+	-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Bootstrap 5 CSS locale -->
+	<!--
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	-->
+	
+	
+	
+	
+	
+	
+	
+	<!-- Collegamenti ai miei css specifici (file creati a parte invece di mettere le informazioni specifiche all'interno del tag <style> qua sotto)-->
+	<link href="css/mystyle.css" rel="stylesheet">
+	<link href="css/risultati.css" rel="stylesheet">
+	
+	<!--
+	<style>
+				Tutti gli stili invece di metterli qui li ho messi nel mystyle.css (quelli in comune tra tutte le pagine) e nei css relativi alle varie pagine (quelli specifici usati da una pagina in particolare).
+				Lascio questo settore solo se devo mettere qualcosa di momentaneo
+	</style>
+	-->
+	
+	
+</head>
+
+
+
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="pictures_ferrero/ferrero-logo.png" alt="Ferrero">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="material-symbols-outlined">more_vert</span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link" href="risultati.html" data-i18n="results">Risultati</a></li>
+					<li class="nav-item"><a class="nav-link" href="impegno.html" data-i18n="commitment">Impegno</a></li>
+					<li class="nav-item"><a class="nav-link" href="report.html" data-i18n="reports">Report</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="moreMenu" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class="material-symbols-outlined">more_vert</span>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreMenu">
+							<li><button class="dropdown-item" onclick="setLanguage('it')">IT</button></li>
+							<li><button class="dropdown-item" onclick="setLanguage('en')">EN</button></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+  
+  
+  
+	<!-- Main -->
+	<main class="container mt-0 pt-5"> 
+
+	<!-- 3 Blocchi -->
+    <section class="container py-5">
+		<section class="container-bis py-5">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<img src="pictures_ferrero/92.png" alt="92" class="mb-3 rounded-img img-fluid" />
+					<h2 data-i18n="NO">92%</h2>
+					<p data-i18n="box1">Imballaggi progettati per essere riciclabili.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="pictures_ferrero/90.png" alt="90" class="mb-3 rounded-img img-fluid" />
+					<h2 data-i18n="NO">90,1%</h2>
+					<p data-i18n="box2">Energia elettrica acquistata certificata rinnovabile.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="pictures_ferrero/89.png" alt="89" class="mb-3 rounded-img img-fluid" />
+					<h2 data-i18n="NO">89,3%</h2>
+					<p data-i18n="box3">Rifiuti recuperati.</p>
+				</div>
+			</div>
+		</section>
+	</section>
+	
+
+    <!-- 1 Blocco con testo -->
+    <section class="container pt-0 pb-5">  
+		<section class="container-bis py-0">
+			<div class="col-md-12">
+				<div class="rounded-box-bis">            
+				<p data-i18n="block1">
+				Le nostre principali aree di interesse includono:<br>
+				- Clima ed energia: riduzione delle emissioni di Scope 1 e Scope 2 del 21,7% rispetto all'anno fiscale 2017/18, aumentando al contempo la produzione.<br>
+				- Gestione delle risorse idriche: riduzione del prelievo idrico e valutazione dell'impronta idrica di Ferrero.<br>
+				- Residui industriali e alimentari: realizzazione di un progetto pilota di successo per decarbonizzare i trasporti in tutta Europa.<br>
+				- Progettazione del packaging ed economia circolare: avanzare nel nostro percorso verso monomateriali, pellicole flessibili e sostituzione della plastica difficile da riciclare.
+				</p>
+				</div>
+			</div>
+		</section>
+	</section>
+	
+	
+	<!-- 3 Blocchi -->
+    <section class="container py-5 bg-custom">	
+		<section class="container-bis py-1">	
+			<div class="row text-center">
+				<div class="col-md-4">          
+					<img src="pictures_ferrero/m90.png" alt="maggiore di 90" class="mb-3 rounded-img img-fluid" />
+					<h2 class="white-heading" data-i18n="NO">>90%</h2>
+					<p class="white-heading" data-i18n="box4">dei nostri ingredienti può essere ricondotto alla loro origine.</p>          
+				</div>
+				<div class="col-md-4">
+					<img src="pictures_ferrero/99.png" alt="99" class="mb-3 rounded-img img-fluid" />
+					<h2 class="white-heading" data-i18n="NO">99%</h2>
+					<p class="white-heading" data-i18n="box5">del nostro cacao proviene da certificazioni o altri standard gestiti in modo indipendente come Rainforest Alliance, Cocoa Horizons e Fairtrade.</p>        
+				</div>
+				<div class="col-md-4">
+					<img src="pictures_ferrero/100.png" alt="100" class="mb-3 rounded-img img-fluid" />
+					<h2 class="white-heading" data-i18n="NO">100%</h2>
+					<p class="white-heading" data-i18n="box6">prodotti a base di uova da allevamento a terra in Europa dal 2014, il 91,3% del nostro consumo globale di prodotti a base di uova proviene da sistemi di allevamento a terra senza gabbie.</p>
+				</div>
+			</div>	
+		</section>
+    </section>
+
+	
+	<!-- 1 Blocco con testo -->
+    <section class="container py-5 bg-custom">  
+		<section class="container-bis py-1">
+			<div class="col-md-12">
+				<div class="rounded-box-bis">            
+					<p data-i18n="block2">
+					Ferrero ha adottato pratiche volte a mantenere catene di fornitura sostenibili ed etiche e a gestire le relative sfide:<br>
+					- Cacao : stiamo lavorando per rendere la coltivazione del cacao più resiliente e inclusiva, sostenendo i mezzi di sussistenza degli agricoltori, dando potere alle donne e investendo nello sviluppo e nell'istruzione della comunità.
+					- Nocciola : promuoviamo la coltivazione sostenibile delle nocciole attraverso l'agricoltura rigenerativa, le partnership locali e il supporto a lungo termine alle comunità agricole.
+					- Olio di palma : ci impegniamo a garantire un approvvigionamento responsabile dell'olio di palma proteggendo la biodiversità, migliorando le condizioni di lavoro e promuovendo soluzioni basate sulla natura nelle principali regioni di approvvigionamento.
+					- Prodotti lattiero-caseari : la nostra strategia nel settore lattiero-caseario si concentra sul sostegno al benessere degli animali, sulla riduzione dell'impatto ambientale e sul rafforzamento della collaborazione con gli allevatori per promuovere un miglioramento continuo.</p>
+				</div>
+			</div>			
+		</section>
+	</section>
+	
+	<!-- 3 Blocchi -->
+    <section class="container py-5">
+		<section class="container-bis py-1">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<img src="pictures_ferrero/85.png" alt="85" class="mb-3 rounded-img img-fluid" />
+					<h2 data-i18n="NO">85%</h2>
+					<p data-i18n="box7">prodotti con porzione minore di 130 kcal.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="pictures_ferrero/100b.png" alt="100b" class="mb-3 rounded-img img-fluid" />
+					<h2 data-i18n="NO">100%</h2>
+					<p data-i18n="box8">di formati di marketikng responsabile rispettati.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="pictures_ferrero/100c.png" alt="100c" class="mb-3 rounded-img img-fluid" />
+					<h2 data-i18n="NO">100%</h2>
+					<p data-i18n="box9">Stabilimenti Ferrero certificati secondo lo standard riconosciuto dalla Global Food Safety Initiative (GFSI).</p>
+				</div>
+			</div>
+		</section>
+	</section>
+	
+	<!-- 1 Blocco con testo -->
+    <section class="container py-5"> 
+		<section class="container-bis py-1">
+			<div class="col-md-12">
+				<div class="rounded-box-bis">            
+					<p data-i18n="block3">
+					-Essendo una delle più grandi aziende alimentari dolciarie al mondo, consideriamo la qualità, la sicurezza, la nutrizione e la comunicazione aree chiave del nostro approccio alla sostenibilità. Il cibo gioca un ruolo centrale nella vita di tutti noi e i consumatori apprezzano i nostri prodotti in oltre 170 paesi.
+					- È nostra responsabilità garantire che i nostri prodotti soddisfino elevati standard di sicurezza e qualità. Dobbiamo inoltre garantire che le nostre comunicazioni di marketing e l'etichettatura dei prodotti aiutino i consumatori a fare scelte appropriate riguardo agli alimenti che acquistano e consumano. Il nostro tasso di conformità complessivo è stato del 98,93% per la pubblicità televisiva e dell'88,89% per la pubblicità online.</p>
+				</div>
+			</div>		
+		</section>
+	</section>
+	
+	<!-- 3 Blocchi -->
+    <section class="container py-5 bg-custom">
+		<section class="container-bis py-1">
+			<div class="row text-center">
+				<div class="col-md-4">
+					<img src="pictures_ferrero/37.png" alt="37" class="mb-3 rounded-img img-fluid" />
+					<h2 class="white-heading" data-i18n="Millions">3,7 Milioni</h2>
+					<p class="white-heading" data-i18n="box10">bambini impegnati in 35 paesi nel nostro programma Kinder Joy of Moving.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="pictures_ferrero/4000.png" alt="4000" class="mb-3 rounded-img img-fluid" />
+					<h2 class="white-heading" data-i18n="NO">4000</h2>
+					<p class="white-heading" data-i18n="box11">dipendenti di tutto il mondo sono stati coinvolti nelle sfide globali Kinder Joy of moving Step per abbracciare uno stile di vita attivo.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="pictures_ferrero/q.png" alt="q" class="mb-3 rounded-img img-fluid" />
+					<h2 class="white-heading" data-i18n="Quadro">Programma di sviluppo delle persone</h2>
+					<p class="white-heading" data-i18n="box12">è stato lanciato per identificare, accedere e far crescere sistematicamente i talenti in tutta l'organizzazione.</p>
+				</div>
+			</div>
+		</section>
+    </section>
+	
+	<!-- 1 Blocco con testo-->
+    <section class="container py-5 bg-custom">   
+		<section class="container-bis py-5">
+			<div class="col-md-12">
+				<div class="rounded-box-bis">            
+					<p data-i18n="block4">
+					- In Ferrero, lavoriamo per costruire una cultura di fiducia, rispetto, diversità e opportunità per tutti. Abbiamo a cuore le nostre persone e crediamo che sia essenziale creare una cultura aziendale inclusiva che utilizzi l'intera gamma dei suoi talenti per rispondere alle nostre priorità aziendali.
+					- La nostra attenzione alle persone si estende all'intera catena del valore, garantendo elevati standard di sicurezza e rispetto dei diritti umani e del lavoro, sia nelle nostre attività operative che nella catena di fornitura globale. Applichiamo un approccio basato sulla due diligence che garantisce che i nostri dipendenti, fornitori e collaboratori aderiscano agli standard stabiliti nel Codice Etico Ferrero, nel Codice di Condotta Commerciale, nel Codice Fornitori e nella Dichiarazione di Politica sui Diritti Umani.</p>
+				</div>
+			</div>      
+		</section>
+    </section>
+	
+	
+	</main>
+
+
+
+	<footer class="mt-5">
+		<div class="container">
+			<p class="text-center" data-i18n="footer_text">&copy; 2025 Ferrero S.p.A. Tutti i diritti riservati.</p>
+		</div>
+	</footer>
+
+	
+	<!-- Javascript bootstrap -->
+	<!-- 
+		Come per i font e per i css di bootsrap questo è il link per prendere javascript di bootstrap se si è online, se si è offline allora 
+		commentare e decommentare il JS bootstrap locale che prende il file js che sono stati scaricati in una cartella in locale 
+	-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!-- Bootstrap JS locale -->
+	<!--
+	<script src="js/bootstrap.bundle.min.js"></script>
+	-->
+	
+	
+
+	<!-- Traduzioni -->
+	<script>
+    const translations = {
+      it: {
+		title: "Risultati - Ferrero",
+        results: "Risultati",
+        commitment: "Impegno",
+        reports: "Report",
+        box1: "Imballaggi progettati per essere riciclabili.",
+        box2: "Energia elettrica acquistata certificata rinnovabile.",
+        box3: "Rifiuti recuperati.",
+        block1: `Le nostre principali aree di interesse includono:<br>
+				- Clima ed energia: riduzione delle emissioni di Scope 1 e Scope 2 del 21,7% rispetto all'anno fiscale 2017/18, aumentando al contempo la produzione.<br>
+				- Gestione delle risorse idriche: riduzione del prelievo idrico e valutazione dell'impronta idrica di Ferrero.<br>
+				- Residui industriali e alimentari: realizzazione di un progetto pilota di successo per decarbonizzare i trasporti in tutta Europa.<br>
+				- Progettazione del packaging ed economia circolare: avanzare nel nostro percorso verso monomateriali, pellicole flessibili e sostituzione della plastica difficile da riciclare.`,
+		box4: "dei nostri ingredienti può essere ricondotto alla loro origine.",
+		box5: "del nostro cacao proviene da certificazioni o altri standard gestiti in modo indipendente come Rainforest Alliance, Cocoa Horizons e Fairtrade.",
+		box6: "prodotti a base di uova da allevamento a terra in Europa dal 2014, il 91,3% del nostro consumo globale di prodotti a base di uova proviene da sistemi di allevamento a terra senza gabbie.",
+		block2:`Ferrero ha adottato pratiche volte a mantenere catene di fornitura sostenibili ed etiche e a gestire le relative sfide:<br>
+				- Cacao : stiamo lavorando per rendere la coltivazione del cacao più resiliente e inclusiva, sostenendo i mezzi di sussistenza degli agricoltori, dando potere alle donne e investendo nello sviluppo e nell'istruzione della comunità.<br>
+				- Nocciola : promuoviamo la coltivazione sostenibile delle nocciole attraverso l'agricoltura rigenerativa, le partnership locali e il supporto a lungo termine alle comunità agricole.<br>
+				- Olio di palma : ci impegniamo a garantire un approvvigionamento responsabile dell'olio di palma proteggendo la biodiversità, migliorando le condizioni di lavoro e promuovendo soluzioni basate sulla natura nelle principali regioni di approvvigionamento.<br>
+				- Prodotti lattiero-caseari : la nostra strategia nel settore lattiero-caseario si concentra sul sostegno al benessere degli animali, sulla riduzione dell'impatto ambientale e sul rafforzamento della collaborazione con gli allevatori per promuovere un miglioramento continuo.`,
+		box7:"prodotti con porzione minore di 130 kcal.",
+		box8:"di formati di marketikng responsabile rispettati.",
+		box9:"Stabilimenti Ferrero certificati secondo lo standard riconosciuto dalla Global Food Safety Initiative (GFSI).",
+		block3:`-Essendo una delle più grandi aziende alimentari dolciarie al mondo, consideriamo la qualità, la sicurezza, la nutrizione e la comunicazione aree chiave del nostro approccio alla sostenibilità. Il cibo gioca un ruolo centrale nella vita di tutti noi e i consumatori apprezzano i nostri prodotti in oltre 170 paesi.<br>
+				- È nostra responsabilità garantire che i nostri prodotti soddisfino elevati standard di sicurezza e qualità. Dobbiamo inoltre garantire che le nostre comunicazioni di marketing e l'etichettatura dei prodotti aiutino i consumatori a fare scelte appropriate riguardo agli alimenti che acquistano e consumano. Il nostro tasso di conformità complessivo è stato del 98,93% per la pubblicità televisiva e dell'88,89% per la pubblicità online.`,
+		Millions: "3,7 Milioni",
+		box10:"bambini impegnati in 35 paesi nel nostro programma Kinder Joy of Moving.",
+		box11:"dipendenti di tutto il mondo sono stati coinvolti nelle sfide globali Kinder Joy of moving Step per abbracciare uno stile di vita attivo.",
+		Quadro:"Programma di sviluppo delle persone",
+		box12:"è stato lanciato per identificare, accedere e far crescere sistematicamente i talenti in tutta l'organizzazione.",
+		block4:`- In Ferrero, lavoriamo per costruire una cultura di fiducia, rispetto, diversità e opportunità per tutti. Abbiamo a cuore le nostre persone e crediamo che sia essenziale creare una cultura aziendale inclusiva che utilizzi l'intera gamma dei suoi talenti per rispondere alle nostre priorità aziendali.<br>
+				- La nostra attenzione alle persone si estende all'intera catena del valore, garantendo elevati standard di sicurezza e rispetto dei diritti umani e del lavoro, sia nelle nostre attività operative che nella catena di fornitura globale. Applichiamo un approccio basato sulla due diligence che garantisce che i nostri dipendenti, fornitori e collaboratori aderiscano agli standard stabiliti nel Codice Etico Ferrero, nel Codice di Condotta Commerciale, nel Codice Fornitori e nella Dichiarazione di Politica sui Diritti Umani.`,
+        footer_text: "© 2025 Ferrero S.p.A. Tutti i diritti riservati."
+      },
+      en: {
+		title: "Results - Ferrero",
+        results: "Results",
+        commitment: "Commitment",
+        reports: "Reports",
+        box1: "Packaging designed to be recyclable.",
+        box2: "Purchased electricity certified as renewable.",
+        box3: "Recovered waste.",
+        block1: `Our main focus areas include:<br>
+				- Climate and energy: 21.7% reduction in Scope 1 and Scope 2 emissions compared to fiscal year 2017/18, while increasing production.<br>
+				- Water resource management: reduction in water withdrawals and assessment of Ferrero’s water footprint.<br>
+				- Industrial and food waste: successful pilot project to decarbonize transport across Europe.<br>
+				- Packaging design and circular economy: advancing our journey towards monomaterials, flexible films, and replacing hard-to-recycle plastics.`,
+		box4: "about our ingredients can be traced back to their origin.",
+		box5: "about our cocoa comes from certifications or other independently managed standards such as Rainforest Alliance, Cocoa Horizons and Fairtrade.",
+		box6: "cage-free egg products in Europe Since 2014, 91.3% of our global egg product consumption has come from cage-free, cage-free systems.",
+		block2:`Ferrero has adopted practices aimed at maintaining sustainable and ethical supply chains and addressing related challenges:<br>
+				- Cocoa: We are working to make cocoa farming more resilient and inclusive by supporting farmer livelihoods, empowering women, and investing in community development and education.<br>
+				- Hazelnut: We promote sustainable hazelnut farming through regenerative agriculture, local partnerships, and long-term support for farming communities.<br>
+				- Palm Oil: We are committed to ensuring responsible palm oil sourcing by protecting biodiversity, improving working conditions, and promoting nature-based solutions in key sourcing regions.<br>
+				- Dairy: Our dairy strategy focuses on supporting animal welfare, reducing environmental impact, and strengthening collaboration with farmers to drive continuous improvement.`,
+		box7:"products with a portion of less than 130 kcal.",
+		box8:"of responsible marketing frameworks respected.",
+		box9:"Ferrero plants certified according to the standard recognized by the Global Food Safety Initiative (GFSI).",
+		block3:`- As one of the world's largest confectionery companies, we consider quality, safety, nutrition, and communications key areas of our approach to sustainability. Food plays a central role in all of our lives, and consumers enjoy our products in over 170 countries.<br>
+				- It is our responsibility to ensure that our products meet high safety and quality standards. We must also ensure that our marketing communications and product labeling help consumers make informed choices about the foods they purchase and consume. Our overall compliance rate was 98.93% for television advertising and 88.89% for online advertising.`,
+		Millions: "3,7 Millions",
+		box10:"children involved in our Kinder Joy of Moving program in 35 countries.",
+		box11:"Employees around the world have been involved in the Kinder Joy of moving Step global challenges to embrace an active lifestyle.",
+		Quadro:"People Development Programm",
+		box12:"It was launched to systematically identify, access, and develop talent across the organization.",
+		block4:`- At Ferrero, we work to build a culture of trust, respect, diversity, and opportunity for all. We care about our people and believe it is essential to create an inclusive corporate culture that utilizes the full range of their talents to address our business priorities. <br>
+				- Our focus on people extends across the entire value chain, ensuring high standards of safety and respect for human and labor rights, both in our operations and in our global supply chain. We apply a due diligence approach that ensures our employees, suppliers, and contractors adhere to the standards established in the Ferrero Code of Ethics, the Code of Business Conduct, the Supplier Code, and the Human Rights Policy Statement.`,
+        footer_text: "© 2025 Ferrero S.p.A. All rights reserved."
+      }
+    };
+	
+	window.addEventListener('DOMContentLoaded', () => {
+	const savedLang = localStorage.getItem('selectedLanguage') || 'it';
+	setLanguage(savedLang);
+	});
+	
+    function setLanguage(lang) {
+		localStorage.setItem('selectedLanguage', lang); 
+		document.documentElement.lang = lang; 
+		document.querySelectorAll('[data-i18n]').forEach(el => {
+			const key = el.getAttribute('data-i18n');
+			if (translations[lang][key]) {
+				el.innerHTML = translations[lang][key];
+			}
+		});
+    }
+	</script>
+</body>
+</html>

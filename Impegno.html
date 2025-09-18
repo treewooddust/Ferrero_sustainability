@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<title data-i18n="title">Il nostro impegno - Ferrero</title>
+  
+	<!-- Material design simboli + Roboto -->
+	<!-- 
+		Questi sono i fonts e i simboli se si prendono online, se voglio girare il sito offline allora commento qua e decommento i font locali sotto.
+		Quel fonts.css è un css in locale che richiama i file dei fonts di Roboto Flex e delle icone di material 3 expressive che sono sempre in una 
+		cartella in locale e che ho scaricato da google fonts 
+	-->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap" rel="stylesheet">	
+	
+	<!-- Font locali -->
+	<!-- 
+	<link href="css/fonts.css" rel="stylesheet">
+	-->
+	
+	
+	
+	
+	
+
+	<!-- Bootstrap 5 CSS -->
+	<!-- 
+		Come per i fonts questo è il link a bootstrap se si è online, se si vuole far girare il sito offline si commenta qui e si decommenta sotto dove
+		c'è il link ai css di bootstrap scaricati e messi in una cartella in locale
+	-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Bootstrap 5 CSS locale -->
+	<!--
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	-->
+	
+	
+	
+	
+	
+	
+	
+	<!-- Collegamenti ai miei css specifici (file creati a parte invece di mettere le informazioni specifiche all'interno del tag <style> qua sotto)-->
+	<link href="css/mystyle.css" rel="stylesheet">
+	<link href="css/impegno.css" rel="stylesheet">
+	
+	<!--
+	<style>
+				Tutti gli stili invece di metterli qui li ho messi nel mystyle.css (quelli in comune tra tutte le pagine) e nei css relativi alle varie pagine (quelli specifici usati da una pagina in particolare).
+				Lascio questo settore solo se devo mettere qualcosa di momentaneo
+	</style>
+	-->
+	
+</head>
+
+
+
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="pictures_ferrero/ferrero-logo.png" alt="Ferrero">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="material-symbols-outlined">more_vert</span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link" href="risultati.html" data-i18n="results">Risultati</a></li>
+					<li class="nav-item"><a class="nav-link" href="impegno.html" data-i18n="commitment">Impegno</a></li>
+					<li class="nav-item"><a class="nav-link" href="report.html" data-i18n="reports">Report</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="moreMenu" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class="material-symbols-outlined">more_vert</span>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="moreMenu">
+							<li><button class="dropdown-item" onclick="setLanguage('it')">IT</button></li>
+							<li><button class="dropdown-item" onclick="setLanguage('en')">EN</button></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- Main -->
+	<main class="container mt-5 pt-5">
+  
+  	
+	<section class="container py-3">
+		<section class="container-bis text-center"> 
+			<section class="container-fluid p-0">
+				<img src="pictures_ferrero/Facts.jpg" alt="Facts" class="rounded-img img-fluid w-100">
+			</section>
+		</section>
+	</section>
+
+	<section class="container py-5 bg-custom">
+		<section class="container-bis text-center"> 
+			<h1 class="my-4 white-heading" class="white-heading" data-i18n="main_title">Il nostro impegno per un futuro sostenibile</h1>
+			<p class= "white-heading" data-i18n="intro">
+			Ferrero si impegna costantemente nella sostenibilità ambientale e nella responsabilità sociale. I nostri obiettivi comprendono:
+			</p>
+			<div class="d-flex justify-content-center white-heading">
+				<ul class="text-start">
+					<li data-i18n="goal_1">Riduzione delle emissioni di CO₂</li>
+					<li data-i18n="goal_2">Imballaggi riciclabili al 100%</li>
+					<li data-i18n="goal_3">Supporto alle comunità agricole locali</li>
+				</ul>
+			</div>
+		</section>
+	</section>
+	
+	
+	
+	
+	
+	<section class="container py-5">
+		<section class="container-bis py-1">
+			<p data-i18n="detailed_text">
+			`Ferrero guarda al futuro con una strategia di sostenibilità articolata e ambiziosa, che coinvolge ogni aspetto della propria attività produttiva e sociale. 
+			 L’azienda si è posta obiettivi chiari per ridurre il proprio impatto ambientale, migliorare la gestione delle risorse e promuovere un modello di crescita responsabile. 
+			 Uno dei principali impegni riguarda la riduzione delle emissioni di gas serra: Ferrero intende dimezzare le proprie emissioni entro il 2030, estendendo il monitoraggio anche alle emissioni indirette legate alla filiera e all’uso del suolo. 
+			 Parallelamente, l’azienda punta ad aumentare l’utilizzo di energia elettrica proveniente da fonti rinnovabili e a investire in tecnologie per l’efficienza energetica e la decarbonizzazione dei trasporti.
+			 Sul fronte dell’approvvigionamento, Ferrero mira a raggiungere la tracciabilità completa per ingredienti chiave come cacao, olio di palma e nocciole, rafforzando le collaborazioni con piattaforme digitali e partner locali. L’obiettivo è garantire una filiera trasparente, etica e rispettosa dei diritti umani. 
+			 Un altro ambito prioritario è quello del packaging: l’azienda si impegna a progettare imballaggi che siano riciclabili, riutilizzabili o compostabili, riducendo progressivamente l’uso di plastica difficile da smaltire e favorendo l’adozione di materiali monocomponente.
+			 Ferrero intende inoltre promuovere un consumo più consapevole, attraverso campagne educative rivolte ai consumatori e una comunicazione trasparente sulle caratteristiche nutrizionali e ambientali dei propri prodotti. A livello interno, l’azienda si propone di valorizzare le persone, promuovendo inclusione, diversità e benessere, e sostenendo progetti sociali nei territori in cui opera. 
+			 Infine, l’innovazione e la trasparenza rappresentano elementi chiave della visione strategica: Ferrero continuerà a investire in ricerca e sviluppo per soluzioni sostenibili e adotterà strumenti digitali per monitorare e comunicare in modo chiaro l’impatto delle proprie attività. Questi obiettivi delineano un percorso concreto verso una sostenibilità integrata, in cui la tutela dell’ambiente, il rispetto delle persone e la qualità dei prodotti si fondono in una visione responsabile e lungimirante.`
+			</p>
+		</section> 	
+	</section> 
+ 
+	</main>
+
+
+
+	<footer class="mt-5">
+		<div class="container">
+			<p class="text-center" data-i18n="footer_text">&copy; 2025 Ferrero S.p.A. Tutti i diritti riservati.</p>
+		</div>
+	</footer>
+
+
+	<!-- Javascript bootstrap -->
+	<!-- 
+		Come per i font e per i css di bootsrap questo è il link per prendere javascript di bootstrap se si è online, se si è offline allora 
+		commentare e decommentare il JS bootstrap locale che prende il file js che sono stati scaricati in una cartella in locale 
+	-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!-- Bootstrap JS locale -->
+	<!--
+	<script src="js/bootstrap.bundle.min.js"></script>
+	-->
+	
+	
+	
+	<!-- Traduzioni -->
+	<script>
+    const translations = {
+	it: {
+        title: "Il nostro impegno - Ferrero",
+        results: "Risultati",
+        commitment: "Impegno",
+        report: "Report",
+        main_title: "Il nostro impegno per un futuro sostenibile",
+        intro:
+          "Ferrero si impegna costantemente nella sostenibilità ambientale e nella responsabilità sociale. I nostri obiettivi comprendono:",
+        goal_1: "Riduzione delle emissioni di CO₂",
+        goal_2: "Imballaggi riciclabili al 100%",
+        goal_3: "Supporto alle comunità agricole locali",
+        detailed_text: `Ferrero guarda al futuro con una strategia di sostenibilità articolata e ambiziosa, che coinvolge ogni aspetto della propria attività produttiva e sociale. 
+						L’azienda si è posta obiettivi chiari per ridurre il proprio impatto ambientale, migliorare la gestione delle risorse e promuovere un modello di crescita responsabile. 
+						Uno dei principali impegni riguarda la riduzione delle emissioni di gas serra: Ferrero intende dimezzare le proprie emissioni entro il 2030, estendendo il monitoraggio anche alle emissioni indirette legate alla filiera e all’uso del suolo. 
+						Parallelamente, l’azienda punta ad aumentare l’utilizzo di energia elettrica proveniente da fonti rinnovabili e a investire in tecnologie per l’efficienza energetica e la decarbonizzazione dei trasporti.
+						Sul fronte dell’approvvigionamento, Ferrero mira a raggiungere la tracciabilità completa per ingredienti chiave come cacao, olio di palma e nocciole, rafforzando le collaborazioni con piattaforme digitali e partner locali. L’obiettivo è garantire una filiera trasparente, etica e rispettosa dei diritti umani. 
+						Un altro ambito prioritario è quello del packaging: l’azienda si impegna a progettare imballaggi che siano riciclabili, riutilizzabili o compostabili, riducendo progressivamente l’uso di plastica difficile da smaltire e favorendo l’adozione di materiali monocomponente.
+						Ferrero intende inoltre promuovere un consumo più consapevole, attraverso campagne educative rivolte ai consumatori e una comunicazione trasparente sulle caratteristiche nutrizionali e ambientali dei propri prodotti. A livello interno, l’azienda si propone di valorizzare le persone, promuovendo inclusione, diversità e benessere, e sostenendo progetti sociali nei territori in cui opera. 
+						Infine, l’innovazione e la trasparenza rappresentano elementi chiave della visione strategica: Ferrero continuerà a investire in ricerca e sviluppo per soluzioni sostenibili e adotterà strumenti digitali per monitorare e comunicare in modo chiaro l’impatto delle proprie attività. Questi obiettivi delineano un percorso concreto verso una sostenibilità integrata, in cui la tutela dell’ambiente, il rispetto delle persone e la qualità dei prodotti si fondono in una visione responsabile e lungimirante.`,
+		footer_text: "© 2025 Ferrero S.p.A. Tutti i diritti riservati."
+      },
+    en: {
+        title: "Our Commitment - Ferrero",
+        results: "Results",
+        commitment: "Commitment",
+        report: "Report",
+        main_title: "Our Commitment to a Sustainable Future",
+        intro:
+          "Ferrero is constantly committed to environmental sustainability and social responsibility. Our goals include:",
+        goal_1: "Reduction of CO₂ emissions",
+        goal_2: "100% recyclable packaging",
+        goal_3: "Support for local farming communities",
+        detailed_text: `Ferrero looks to the future with a comprehensive and ambitious sustainability strategy that encompasses every aspect of its production and social activities.
+						The company has set clear goals to reduce its environmental impact, improve resource management, and promote a responsible growth model.
+						One of its key commitments is the reduction of greenhouse gas emissions: Ferrero intends to halve its emissions by 2030, extending monitoring to indirect emissions related to the supply chain and land use.
+						At the same time, the company aims to increase the use of electricity from renewable sources and invest in technologies for energy efficiency and the decarbonization of transportation.
+						On the sourcing front, Ferrero aims to achieve complete traceability for key ingredients such as cocoa, palm oil, and hazelnuts, strengthening collaborations with digital platforms and local partners. The goal is to ensure a transparent, ethical, and human rights-respecting supply chain.
+						Another priority area is packaging: the company is committed to designing packaging that is recyclable, reusable, or compostable, progressively reducing the use of difficult-to-dispose plastic and encouraging the adoption of single-component materials.
+						Ferrero also intends to promote more conscious consumption through consumer education campaigns and transparent communication about the nutritional and environmental characteristics of its products. Internally, the company aims to empower people by promoting inclusion, diversity, and well-being, and supporting social projects in the communities where it operates.
+						Finally, innovation and transparency are key elements of its strategic vision: Ferrero will continue to invest in research and development for sustainable solutions and will adopt digital tools to clearly monitor and communicate the impact of its activities. These objectives outline a concrete path towards integrated sustainability, in which environmental protection, respect for people, and product quality come together in a responsible and forward-looking vision.`,
+        footer_text: "© 2025 Ferrero S.p.A. All rights reserved."
+      }
+      
+    };
+
+    window.addEventListener('DOMContentLoaded', () => {
+	const savedLang = localStorage.getItem('selectedLanguage') || 'it';
+	setLanguage(savedLang);
+	});
+	
+    function setLanguage(lang) {
+		localStorage.setItem('selectedLanguage', lang); 
+		document.documentElement.lang = lang; 
+		document.querySelectorAll('[data-i18n]').forEach(el => {
+			const key = el.getAttribute('data-i18n');
+			if (translations[lang][key]) {
+				el.innerHTML = translations[lang][key];
+			}
+		});
+    }
+	</script>
+</body>
+</html>
